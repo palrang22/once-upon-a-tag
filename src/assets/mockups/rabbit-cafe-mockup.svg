@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="460" viewBox="0 0 300 460" fill="none" shape-rendering="crispEdges" role="img" aria-label="토끼네 카페 홈페이지 손그림 목업">
+  <rect x="1" y="1" width="298" height="458" fill="#FFFFFF" stroke="#141414" stroke-width="2"/>
+  <rect x="12" y="12" width="276" height="436" fill="#FFFFFF" stroke="#141414" stroke-width="2"/>
+  <g font-family="NeoDGM, monospace" fill="#141414">
+    <text x="24" y="35" font-size="11">간판 (h1)</text>
+    <text x="24" y="61" font-size="23">토끼네 카페</text>
+    <path d="M23 69H277" stroke="#141414" stroke-width="2"/>
+    <text x="24" y="88" font-size="11">소개 한 줄 (p)</text>
+    <text x="24" y="105" font-size="12">당근 향 가득한 동네 카페예요</text>
+
+    <text x="24" y="135" font-size="15">메뉴 (h2)</text>
+    <path d="M23 142H277" stroke="#141414" stroke-width="2"/>
+    <rect x="23" y="151" width="254" height="172" fill="#FFFFFF" stroke="#141414" stroke-width="2"/>
+    <rect x="32" y="144" width="53" height="15" fill="#FFFFFF"/>
+    <text x="36" y="156" font-size="11">menu</text>
+    <rect x="37" y="171" width="5" height="5"/>
+    <text x="50" y="177" font-size="13" font-weight="bold">당근케이크</text>
+    <text x="171" y="177" font-size="10">추천 (strong)</text>
+    <rect x="37" y="192" width="5" height="5"/>
+    <text x="50" y="198" font-size="13">딸기우유</text>
+    <rect x="37" y="213" width="5" height="5"/>
+    <text x="50" y="219" font-size="13">클로버 라떼</text>
+    <rect x="37" y="232" width="84" height="49" stroke="#141414" stroke-width="2"/>
+    <path d="M39 279 72 246 90 262 118 234M39 234 119 279" stroke="#141414" stroke-width="2"/>
+    <text x="132" y="254" font-size="12">케이크 사진 (img)</text>
+    <text x="132" y="272" font-size="10">images/cake.svg</text>
+    <text x="38" y="308" font-size="13">인스타에서 만나요 (a)</text>
+    <path d="M38 312H185" stroke="#141414" stroke-width="2"/>
+
+    <rect x="23" y="335" width="254" height="35" fill="#FFFFFF" stroke="#141414" stroke-width="2"/>
+    <text x="80" y="358" font-size="15">주문하기 (button)</text>
+
+    <text x="24" y="399" font-size="15">오시는 길 (h2)</text>
+    <path d="M23 406H277" stroke="#141414" stroke-width="2"/>
+    <text x="24" y="428" font-size="12">당근밭 사거리 왼쪽 골목 (p)</text>
+  </g>
+</svg>

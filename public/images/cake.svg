@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="144" viewBox="0 0 64 48" shape-rendering="crispEdges" role="img" aria-label="당근케이크 한 조각">
+  <defs>
+    <pattern id="crumb" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#FFFFFF"/>
+      <rect width="2" height="2" fill="#8C8C8C"/>
+      <rect x="2" y="2" width="2" height="2" fill="#8C8C8C"/>
+    </pattern>
+  </defs>
+  <!-- The two sides of a triangular slice. -->
+  <path d="M4 24 28 30 28 42 4 36Z" fill="url(#crumb)" stroke="#141414" stroke-width="2"/>
+  <path d="M28 30 59 16 59 29 28 42Z" fill="url(#crumb)" stroke="#141414" stroke-width="2"/>
+  <path d="M5 30 28 36 58 23" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M5 33 28 39 58 26" fill="none" stroke="#141414" stroke-width="1"/>
+  <!-- Frosting with a squared-off piped edge. -->
+  <path d="M4 15 35 6 59 16 28 31 4 24Z" fill="#FFFFFF" stroke="#141414" stroke-width="2"/>
+  <path d="M5 23 9 24 9 27 13 27 13 25 17 26 17 29 21 29 21 28 25 29 25 32 29 32 34 29 34 26 38 26 38 27 43 24 43 22 48 22 48 21 53 19 53 18 59 16" fill="none" stroke="#141414" stroke-width="2"/>
+  <!-- A small carrot decoration on the icing. -->
+  <path d="M25 14 35 15 30 23 28 24Z" fill="#8C8C8C" stroke="#141414" stroke-width="1"/>
+  <path d="M29 13 27 9 30 10 32 7 33 12 36 10 35 14Z" fill="#FFFFFF" stroke="#141414" stroke-width="1"/>
+  <path d="M27 17 31 18M28 20 30 21" fill="none" stroke="#141414" stroke-width="1"/>
+</svg>

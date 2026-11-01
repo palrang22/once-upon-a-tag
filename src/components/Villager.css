@@ -1,0 +1,21 @@
+.villager{position:absolute;left:calc(50% - 100px);bottom:0;display:block}
+.villager .mo{display:none}
+.villager.open .mo{display:inline}
+.villager.open .mc{display:none}
+.villager .bob{animation:vg-bob 1.2s steps(1) infinite}
+.villager.talk .bob{animation-duration:.5s}
+.villager .eye{transform-box:fill-box;transform-origin:center;animation:vg-blink 4s steps(1) infinite}
+.villager.talk .ear{animation:vg-ear .3s steps(1) infinite}
+.villager.talk .tail{animation:vg-tail .3s steps(1) infinite}
+.villager.talk .wave{animation:vg-wave .35s steps(1) infinite}
+.villager.talk .point{animation:vg-point .4s steps(1) infinite}
+.villager.talk .fl{animation:vg-fl .3s steps(1) infinite}
+.villager.talk .fr{animation:vg-fr .3s steps(1) infinite}
+@keyframes vg-bob{50%{transform:translateY(-4px)}}
+@keyframes vg-blink{0%,92%{transform:scaleY(1)}93%,97%{transform:scaleY(.15)}}
+@keyframes vg-ear{50%{transform:rotate(14deg)}}
+@keyframes vg-tail{50%{transform:rotate(-16deg)}}
+@keyframes vg-wave{0%{transform:rotate(-70deg)}50%{transform:rotate(-105deg)}}
+@keyframes vg-point{0%{transform:rotate(40deg)}50%{transform:rotate(65deg)}}
+@keyframes vg-fl{50%{transform:rotate(14deg)}}
+@keyframes vg-fr{50%{transform:rotate(-14deg)}}
