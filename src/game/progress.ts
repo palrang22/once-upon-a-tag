@@ -13,6 +13,10 @@ export interface Progress {
   tutorialDone: boolean;
 }
 
+/** A commission opens once the one before it is completed; the current one and earlier ones stay open. */
+export const isUnlocked = (progress: Progress, index: number) =>
+  index <= progress.current || progress.completed.includes(commissions[index - 1]?.id);
+
 const key = 'once-upon-a-tag:progress:v1';
 export const initialProgress = (): Progress => ({ current: 0, coins: 0, completed: [], drafts: {}, learned: [], tutorialDone: false });
 export function loadProgress(): Progress {
