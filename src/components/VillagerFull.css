@@ -1,0 +1,49 @@
+/* 전신 주민 (걷기 가능). 모든 애니메이션은 steps(1). */
+.villager-full { display: block; overflow: visible; }
+.villager-full.face-left { transform: scaleX(-1); }
+
+.villager-full .mo { display: none; }
+.villager-full.open .mo { display: inline; }
+.villager-full.open .mc { display: none; }
+
+.villager-full .vf-body { animation: vf-bob 1.2s steps(1) infinite; }
+.villager-full.walking .vf-body { animation: vf-bob-walk .4s steps(1) infinite; }
+.villager-full.talk .vf-body { animation: vf-bob-talk .5s steps(1) infinite; }
+.villager-full.walking.talk .vf-body { animation: vf-bob-walk .4s steps(1) infinite; }
+
+.villager-full .eye { transform-box: fill-box; transform-origin: center; animation: vf-blink 4s steps(1) infinite; }
+
+.villager-full .vf-legs-b { display: none; }
+.villager-full.walking .vf-legs-b { display: inline; }
+.villager-full.walking .vf-legs-a { animation: vf-step-a .4s steps(1) infinite; }
+.villager-full.walking .vf-legs-b { animation: vf-step-b .4s steps(1) infinite; }
+
+.villager-full.walking .vf-al { animation: vf-swing-l .4s steps(1) infinite; }
+.villager-full.walking .vf-ar { animation: vf-swing-r .4s steps(1) infinite; }
+
+.villager-full.talk .ear { animation: vf-ear .3s steps(1) infinite; }
+.villager-full.talk .tail { animation: vf-tail .3s steps(1) infinite; }
+.villager-full.talk .wave { animation: vf-wave .35s steps(1) infinite; }
+.villager-full.talk .point { animation: vf-point .4s steps(1) infinite; }
+.villager-full.talk .fl { animation: vf-fl .3s steps(1) infinite; }
+.villager-full.talk .fr { animation: vf-fr .3s steps(1) infinite; }
+
+@keyframes vf-bob { 50% { transform: translateY(-4px); } }
+@keyframes vf-bob-walk { 50% { transform: translateY(-2px); } }
+@keyframes vf-bob-talk { 50% { transform: translateY(-4px); } }
+@keyframes vf-blink { 0%, 92% { transform: scaleY(1); } 93%, 97% { transform: scaleY(.15); } }
+@keyframes vf-step-a { 0% { visibility: visible; } 50% { visibility: hidden; } }
+@keyframes vf-step-b { 0% { visibility: hidden; } 50% { visibility: visible; } }
+@keyframes vf-swing-l { 0% { transform: rotate(10deg); } 50% { transform: rotate(-10deg); } }
+@keyframes vf-swing-r { 0% { transform: rotate(-10deg); } 50% { transform: rotate(10deg); } }
+@keyframes vf-ear { 50% { transform: rotate(14deg); } }
+@keyframes vf-tail { 50% { transform: rotate(-16deg); } }
+@keyframes vf-wave { 0% { transform: rotate(-70deg); } 50% { transform: rotate(-105deg); } }
+@keyframes vf-point { 0% { transform: rotate(40deg); } 50% { transform: rotate(65deg); } }
+@keyframes vf-fl { 50% { transform: rotate(14deg); } }
+@keyframes vf-fr { 50% { transform: rotate(-14deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .villager-full * { animation: none !important; }
+  .villager-full.walking .vf-legs-b { display: none; }
+}

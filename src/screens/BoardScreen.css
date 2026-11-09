@@ -1,0 +1,56 @@
+.board-screen{position:relative;min-height:100vh;padding-bottom:40px;background:#fff;overflow:hidden;word-break:keep-all}
+/* Ground the board stands on: a black road-edge line, then white grass with a few flowers and tufts. */
+.board-screen::after{content:"";position:absolute;inset:auto 0 0;height:200px;border-top:2px solid #141414;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='130' height='60' shape-rendering='crispEdges'%3E%3Cpath fill='%23141414' d='M11 6h1v1h-1zM12 6h1v1h-1zM13 6h1v1h-1zM10 7h1v1h-1zM14 7h1v1h-1zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM10 9h1v1h-1zM14 9h1v1h-1zM11 10h1v1h-1zM12 10h1v1h-1zM13 10h1v1h-1zM12 11h1v1h-1zM12 12h1v1h-1zM14 12h1v1h-1zM12 13h1v1h-1zM13 13h1v1h-1zM12 14h1v1h-1zM11 15h1v1h-1zM12 15h1v1h-1zM12 16h1v1h-1zM78 34h1v1h-1zM79 34h1v1h-1zM81 34h1v1h-1zM82 34h1v1h-1zM79 35h1v1h-1zM81 35h1v1h-1zM80 36h1v1h-1zM80 37h1v1h-1zM80 38h1v1h-1zM104 42h1v1h-1zM106 42h1v1h-1zM108 42h1v1h-1zM104 43h1v1h-1zM108 43h1v1h-1zM104 44h1v1h-1zM108 44h1v1h-1zM105 45h1v1h-1zM106 45h1v1h-1zM107 45h1v1h-1zM106 46h1v1h-1zM104 47h1v1h-1zM106 47h1v1h-1zM105 48h1v1h-1zM106 48h1v1h-1zM106 49h1v1h-1zM106 50h1v1h-1z'/%3E%3Cpath fill='%23A6A6A6' d='M40 30h1v1h-1zM42 30h1v1h-1zM44 30h1v1h-1zM41 31h1v1h-1zM43 31h1v1h-1zM116 12h1v1h-1zM118 12h1v1h-1zM120 12h1v1h-1zM117 13h1v1h-1zM119 13h1v1h-1zM22 50h1v1h-1zM24 50h1v1h-1zM26 50h1v1h-1zM23 51h1v1h-1zM25 51h1v1h-1z'/%3E%3C/svg%3E") 40px 0/260px 120px;image-rendering:pixelated}
+.board-header,.board-stand{position:relative;z-index:1}
+.board-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 24px}
+.board-header h1{margin:0;font-size:32px;font-weight:400;line-height:1.2;white-space:nowrap}
+.board-back{display:inline-flex;align-items:center;gap:8px;min-height:44px}
+
+.board-stand{width:min(1120px,calc(100% - 32px));margin:12px auto 0}
+.board-roof{height:20px;margin:0 -18px;border:2px solid #141414;box-shadow:4px 4px 0 #141414;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' shape-rendering='crispEdges'%3E%3Crect width='1' height='1' fill='%23A6A6A6'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%23A6A6A6'/%3E%3C/svg%3E") 0 0/8px 8px;image-rendering:pixelated}
+.notice-board{position:relative;padding:28px 28px 20px;border:2px solid #141414;border-top:0;box-shadow:4px 4px 0 #141414}
+.notice-board::before,.notice-board::after{content:"";position:absolute;top:10px;width:6px;height:6px;background:#6E6E6E}
+.notice-board::before{left:10px}.notice-board::after{right:10px}
+.board-legs{display:flex;justify-content:space-between;padding:0 14%}
+.board-legs span{width:24px;height:64px;border:2px solid #141414;border-top:0;box-shadow:4px 0 0 #141414;background:#fff repeating-linear-gradient(180deg,transparent 0 10px,#BDBDBD 10px 12px)}
+
+.board-pin{position:absolute;top:-12px;left:calc(50% - 9px);z-index:1}
+
+.continue-note{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;width:min(560px,100%);margin:6px auto 30px;padding:16px 18px 14px;background:#fff;color:#141414;border:2px solid #141414;box-shadow:3px 3px 0 #141414;transform:rotate(-.6deg)}
+.continue-note:hover{background:#efefef}
+.continue-note:active{box-shadow:none;transform:rotate(-.6deg) translate(3px,3px)}
+.continue-label{flex:none;padding:0 8px;background:#141414;color:#fff;white-space:nowrap}
+
+.board-page{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:28px 36px}
+.board-part{display:flex;flex-direction:column;align-items:center;gap:18px}
+.board-notes{display:flex;flex-wrap:wrap;justify-content:center;gap:22px 18px}
+.board-plaque{padding:2px 14px;background:#fff;border:2px solid #141414;box-shadow:2px 2px 0 #141414}
+
+.chapter-note{position:relative;width:176px;min-height:224px;display:flex;flex-direction:column;align-items:center;gap:6px;padding:22px 12px 14px;background:#fff;color:#141414;border:2px solid #141414;box-shadow:3px 3px 0 #141414;text-align:center;transform:rotate(var(--tilt))}
+button.chapter-note:hover:not(:disabled){background:#efefef;transform:rotate(0deg) translateY(-2px)}
+button.chapter-note:active:not(:disabled){box-shadow:none;transform:translate(3px,3px)}
+.chapter-note:disabled{color:#5e5e5e;cursor:default}
+.chapter-note.locked{justify-content:center;border-style:dashed;border-color:#8c8c8c;box-shadow:none;color:#5e5e5e;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' shape-rendering='crispEdges'%3E%3Crect width='1' height='1' fill='%23A6A6A6'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%23A6A6A6'/%3E%3C/svg%3E") 0 0/8px 8px}
+.chapter-note.locked .chapter-num,.chapter-note.locked .chapter-hint{padding:0 6px;background:#fff}
+.chapter-face{line-height:0}
+.chapter-title{line-height:1.45}
+.chapter-cells{display:flex;flex-wrap:wrap;justify-content:center;gap:3px;margin-top:auto}
+.chapter-cells span{width:12px;height:12px;border:2px solid #141414}
+.chapter-cells .done{background:#141414}
+.chapter-cells .current{background:repeating-conic-gradient(#141414 0 25%,#fff 0 50%) 0 0/4px 4px}
+.chapter-count{color:#5e5e5e}
+.chapter-lock{line-height:0;transform:scale(2);margin:14px 0}
+.chapter-stamp{position:absolute;top:44px;right:10px;padding:0 8px;border:2px solid #141414;outline:2px solid #141414;outline-offset:2px;background:#fff;transform:rotate(14deg)}
+
+.board-pager{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:24px}
+.board-pager .wood-btn{min-height:40px;padding:0 14px;display:inline-grid;place-items:center}
+.board-pager .wood-btn:disabled{color:#8a8a8a;border-color:#8c8c8c;box-shadow:none;transform:none}
+.board-pager span{padding:0 8px;background:#fff}
+
+.chapter-sheet{width:min(680px,calc(100vw - 32px))}
+
+.pin-in{animation:pin-in .4s steps(4) both}
+@keyframes pin-in{0%{transform:translateY(-48px) rotate(var(--tilt)) scale(1.12)}75%{transform:translateY(4px) rotate(var(--tilt))}100%{transform:rotate(var(--tilt))}}
+
+@media(max-width:650px){.board-header{padding:12px 16px;gap:8px}.board-back{padding:0 10px}.notice-board{padding:24px 14px 16px}.chapter-note{width:150px;min-height:210px}}
+@media(prefers-reduced-motion:reduce){.pin-in{animation:none}}
